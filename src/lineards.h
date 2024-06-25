@@ -182,7 +182,7 @@
  *
  * @section usage_sec Usage
  *
- * To use the library, include the header file `linear_data_structures.h` in your C source files:
+ * To use the library, include the header file `lineards.h` in your C source files:
  *
  * @code
  * #include <lineards.h>

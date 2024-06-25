@@ -1,7 +1,0 @@
-/g/Meu Drive/1. Ensino/Materiais/lineards/build/CMakeFiles/lineards.dir
-/g/Meu Drive/1. Ensino/Materiais/lineards/build/CMakeFiles/edit_cache.dir
-/g/Meu Drive/1. Ensino/Materiais/lineards/build/CMakeFiles/rebuild_cache.dir
-/g/Meu Drive/1. Ensino/Materiais/lineards/build/CMakeFiles/list_install_components.dir
-/g/Meu Drive/1. Ensino/Materiais/lineards/build/CMakeFiles/install.dir
-/g/Meu Drive/1. Ensino/Materiais/lineards/build/CMakeFiles/install/local.dir
-/g/Meu Drive/1. Ensino/Materiais/lineards/build/CMakeFiles/install/strip.dir

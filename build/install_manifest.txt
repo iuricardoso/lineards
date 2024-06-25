@@ -1,2 +1,0 @@
-/mingw64/lib/liblineards.a
-/mingw64/include/lineards.h
