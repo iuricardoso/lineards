@@ -1,0 +1,2 @@
+/mingw64/bin/ar.exe qc liblineards.a CMakeFiles/lineards.dir/lineards.c.o
+/mingw64/bin/ranlib.exe liblineards.a
