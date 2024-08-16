@@ -124,7 +124,7 @@
  *
  * @example Iterator
  * @code
- * #include "lineards.h"
+ * #include <lineards.h>
  *
  * int main() {
  *     // Create a new linked list with element size of sizeof(int)
