@@ -243,6 +243,7 @@ extern "C" {
 
 #include <stddef.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * @brief Creates a static pointer to a temporary variable holding a given value.
@@ -262,24 +263,54 @@ extern "C" {
  * concurrent threads may interfere with each other's data if they call this macro simultaneously.
  *
  * @example
- * @code
- * #include <stdio.h>
+ * @code *
+ * LINEAR_DS * l = lds_new_list(sizeof(int));
+ * lds_insert(l, 0, MAKE_PTR(100));
  *
- * #define MAKE_PTR(var)   ({ static __typeof__(var) _tmp = (var); (void *)&_tmp; })
- *
- * void example_function(void *ptr) {
- *     int value = *(int *)ptr;
- *     printf("Value: %d\n", value);
- * }
- *
- * int main() {
- *     example_function(MAKE_PTR(42));  // Passing a constant value of 42
- *     return 0;
- * }
+ * int x;
+ * lds_get(l, 0, &x);
+ * printf("%s", x); // prints 100.
  * @endcode
  */
 #define MAKE_PTR(var)   ({ static __typeof__(var) _tmp = (var); (void *)&_tmp; })
 
+/**
+ * @brief Padds a string to the specified length with characters.
+ *
+ * This macro creates a static character array to hold a string with a specified maximum size.
+ * It copies the content of the provided string into the buffer, ensuring that it is not larger than the specified size.
+ * The macro then returns the address of this static buffer.
+ *
+ * This macro is intended to be used for storing copies of strings in the `LINEAR_DS` structure.
+ *
+ * @param str The string to be copied.
+ * @param max_size The maximum size of the buffer. The string will be truncated if it exceeds this size.
+ * @return A pointer to the static buffer containing the copied string null-terminated.
+ *
+ * @note The static buffer persists between calls, meaning the content will be retained but overwritten on subsequent calls.
+ * This macro is not thread-safe.
+ *
+ * @warning If the provided string exceeds `max_size`, it will be truncated.
+ *
+ * @example
+ * @code
+ * #define STR_LENGTH 20
+ *
+ * LINEAR_DS * l = lds_new_list(STR_LENGTH);
+ * lds_insert(l, 0, STRING_PAD("banana", STR_LENGTH));
+ *
+ * char fruit[STR_LENGTH];
+ * lds_get(l, 0, fruit);
+ * printf("%s", fruit); // prints "banana".
+ * @endcode
+ */
+#define STRING_PAD(str, max_size) \
+({ \
+    static char _tmp[(max_size)]; \
+    strncpy(_tmp, (str), (max_size)); \
+    _tmp[(max_size)-1] = '\0'; \
+    (char *)_tmp; \
+})
 
 /**
  * @enum lds_return_t
@@ -499,6 +530,16 @@ lds_return_t lds_remove_last(LINEAR_DS *ds, void *removed_element);
 size_t lds_size(LINEAR_DS *ds);
 
 /**
+ * @brief Returns a logical value (1-true, 0-false) indicating whether the structure is empty or not.
+ *
+ * Informs whether the LINEAR_DS structure passed as a parameter is empty or not.
+ * It is empty when the number of elements is equal to zero.
+ * @param ds Pointer to the linear data structure.
+ * @return A int value as logical value (1-true, 0-false).
+ */
+int lds_empty(LINEAR_DS *ds);
+
+/**
  * @brief Returns the current capacity of the linear data structure.
  *
  * This function retrieves the current capacity of the linear data structure, which represents
@@ -651,14 +692,6 @@ lds_return_t lds_it_reset(LDS_ITERATOR *it);
 lds_return_t lds_it_go(LDS_ITERATOR *it, size_t pos);
 
 
-#ifndef __STDC_VERSION__
-#define inline
-#endif /* __STDC_VERSION__ */
-
-#if __STDC_VERSION__ < 199901L
-#define inline
-#endif
-
 /* Funções de pilha */
 /**
  * @brief Pushes a value onto the stack.
@@ -669,7 +702,7 @@ lds_return_t lds_it_go(LDS_ITERATOR *it, size_t pos);
  * @param value Pointer to the value to be pushed onto the stack.
  * @return lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code).
  */
-inline lds_return_t lds_stack_push(LINEAR_DS * ds, void *value);
+lds_return_t lds_stack_push(LINEAR_DS * ds, void *value);
 
 /**
  * @brief Pops the top value from the stack.
@@ -680,7 +713,7 @@ inline lds_return_t lds_stack_push(LINEAR_DS * ds, void *value);
  * @param removed_element Pointer to a memory location where the removed value will be stored.
  * @return lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code).
  */
-inline lds_return_t lds_stack_pop(LINEAR_DS * ds, void *removed_element);
+lds_return_t lds_stack_pop(LINEAR_DS * ds, void *removed_element);
 
 /**
  * @brief Retrieves the top value from the stack without removing it.
@@ -691,7 +724,7 @@ inline lds_return_t lds_stack_pop(LINEAR_DS * ds, void *removed_element);
  * @param top Pointer to a memory location where the top value will be stored.
  * @return lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code).
  */
-inline lds_return_t lds_stack_top(LINEAR_DS * ds, void *top);
+lds_return_t lds_stack_peek(LINEAR_DS * ds, void *top);
 
 /* Funções de fila */
 /**
@@ -703,7 +736,7 @@ inline lds_return_t lds_stack_top(LINEAR_DS * ds, void *top);
  * @param value Pointer to the value to be enqueued.
  * @return lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code).
  */
-inline lds_return_t lds_enqueue(LINEAR_DS * ds, void *value);
+lds_return_t lds_enqueue(LINEAR_DS * ds, void *value);
 
 /**
  * @brief Dequeues the front value from the queue.
@@ -714,7 +747,7 @@ inline lds_return_t lds_enqueue(LINEAR_DS * ds, void *value);
  * @param removed_element Pointer to a memory location where the removed value will be stored.
  * @return lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code).
  */
-inline lds_return_t lds_dequeue(LINEAR_DS * ds, void *removed_element);
+lds_return_t lds_dequeue(LINEAR_DS * ds, void *removed_element);
 
 /**
  * @brief Retrieves the front value from the queue without removing it.
@@ -725,7 +758,7 @@ inline lds_return_t lds_dequeue(LINEAR_DS * ds, void *removed_element);
  * @param front Pointer to a memory location where the front value will be stored.
  * @return lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code).
  */
-inline lds_return_t lds_queue_peek(LINEAR_DS * ds, void *front);
+lds_return_t lds_queue_front(LINEAR_DS * ds, void *front);
 
 #ifdef NDEBUG
 #define lds_debug(ds, out, debug_fmt)

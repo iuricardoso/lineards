@@ -467,6 +467,10 @@ size_t lds_size(LINEAR_DS *ds) {
     return ds != NULL ? ((LINEAR_DS*)ds)->size : 0;
 }
 
+int lds_empty(LINEAR_DS *ds) {
+    return ds != NULL ? ds->size == 0 : 0;
+}
+
 size_t lds_capacity(LINEAR_DS *ds) {
     return (ds != NULL || ds->type == LDS_VECTOR) ? ((LINEAR_DS*)ds)->capacity : 0;
 }
@@ -694,27 +698,27 @@ static lds_return_t it_set_in_list(LDS_ITERATOR *it, void *value) {
 }
 
 /* Funções de pilha */
-inline lds_return_t lds_stack_push(LINEAR_DS * ds, void *value) {
+lds_return_t lds_stack_push(LINEAR_DS * ds, void *value) {
     return lds_insert(ds, 0, value);
 }
 
-inline lds_return_t lds_stack_pop(LINEAR_DS * ds, void *removed_element) {
+lds_return_t lds_stack_pop(LINEAR_DS * ds, void *removed_element) {
     return lds_remove(ds, 0, removed_element);
 }
 
-inline lds_return_t lds_stack_top(LINEAR_DS * ds, void *top) {
+lds_return_t lds_stack_peek(LINEAR_DS * ds, void *top) {
     return lds_get(ds, 0, top);
 }
 
 /* Funções de fila */
-inline lds_return_t lds_enqueue(LINEAR_DS * ds, void *value) {
+lds_return_t lds_enqueue(LINEAR_DS * ds, void *value) {
     return lds_insert_last(ds, value);
 }
 
-inline lds_return_t lds_dequeue(LINEAR_DS * ds, void *removed_element) {
+lds_return_t lds_dequeue(LINEAR_DS * ds, void *removed_element) {
     return lds_remove(ds, 0, removed_element);
 }
 
-inline lds_return_t lds_queue_peek(LINEAR_DS * ds, void *front) {
+lds_return_t lds_queue_front(LINEAR_DS * ds, void *front) {
     return lds_get(ds, 0, front);
 }
