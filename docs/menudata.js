@@ -29,8 +29,8 @@ var menudata={children:[
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
 {text:"l",url:"globals.html#index_l"}]},
-{text:"Functions",url:"globals_func.html"},
-{text:"Typedefs",url:"globals_type.html"},
+{text:"Functions",url:"globals_func.html",children:[
+{text:"l",url:"globals_func.html#index_l"}]},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Enumerator",url:"globals_eval.html"}]}]},
 {text:"Examples",url:"examples.html"}]}

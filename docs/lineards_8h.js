@@ -1,7 +1,5 @@
 var lineards_8h =
 [
-    [ "LDS_ITERATOR", "lineards_8h.html#aa0fed03fb717eb4098f75e9eda3b718b", null ],
-    [ "LINEAR_DS", "lineards_8h.html#af8e42f5836125d5e87b920abf2107dda", null ],
     [ "lds_return_t", "lineards_8h.html#a8f1ff60758e493fdb72f0a4946c6cc5a", [
       [ "LDS_FAIL", "lineards_8h.html#a8f1ff60758e493fdb72f0a4946c6cc5aafd3b9336b8ded6ab0079b122dcb1a1ed", null ],
       [ "LDS_SUCCESS", "lineards_8h.html#a8f1ff60758e493fdb72f0a4946c6cc5aa16385c4b4ca04b2134b073dba11f5d0d", null ],
@@ -16,6 +14,7 @@ var lineards_8h =
     [ "lds_capacity", "lineards_8h.html#a7dfccb0e590ffb49014dc6e47f9cf932", null ],
     [ "lds_data_size", "lineards_8h.html#ac021207dd63f594b1ce2229857f12a4d", null ],
     [ "lds_dequeue", "lineards_8h.html#acb1b8c3a22e0268569deb559b97dccc9", null ],
+    [ "lds_empty", "lineards_8h.html#ae5521d0113bf91a0a2fa27bee846ae1b", null ],
     [ "lds_enqueue", "lineards_8h.html#a3ae58011d660e402025f3c8797d106cb", null ],
     [ "lds_free", "lineards_8h.html#ac39187f7ee0e56290043dee8ec268473", null ],
     [ "lds_get", "lineards_8h.html#a197e3b667420118fb8c2d4923889145e", null ],
@@ -34,13 +33,13 @@ var lineards_8h =
     [ "lds_iterator", "lineards_8h.html#aa51c11b738351635770b0f47006f33d7", null ],
     [ "lds_new_list", "lineards_8h.html#ae16173f31240c822d9ea9c58efc53752", null ],
     [ "lds_new_vector", "lineards_8h.html#ae29854a3eaec520e1e7471e81464a407", null ],
-    [ "lds_queue_peek", "lineards_8h.html#a29a2cd361d0f2416a26f758daaeaf29d", null ],
+    [ "lds_queue_front", "lineards_8h.html#aecae6d0cd3605e2addd481fd793504b8", null ],
     [ "lds_remove", "lineards_8h.html#a15f866e99ae21e0c951ae254dd15b359", null ],
     [ "lds_remove_last", "lineards_8h.html#afa9ab8f93a67fcd6bc3b58c46d75ddff", null ],
     [ "lds_set", "lineards_8h.html#abed359a5087457de974b7a35af21467a", null ],
     [ "lds_size", "lineards_8h.html#a32f34c5988cc1718291373444794a94b", null ],
+    [ "lds_stack_peek", "lineards_8h.html#ae5aba35ffe32cdc1154a184949509d30", null ],
     [ "lds_stack_pop", "lineards_8h.html#a3601c43ec856a456230d8e934b64f264", null ],
     [ "lds_stack_push", "lineards_8h.html#a5ddd763af1a790cedd714e6452d253e1", null ],
-    [ "lds_stack_top", "lineards_8h.html#a8f5de621130213329e8d88fbf57b1b26", null ],
     [ "lds_type", "lineards_8h.html#a0b7d436b495f0ff204e94cb2d9202961", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LinearDS: Globals</title>
+<title>LinearDS: G:/Meu Drive/1. Ensino/Materiais/lineards/src/lineards.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('globals_type.html',''); initResizable(true); });
+$(function(){initNavTree('_g_1_2_meu_01_drive_21_8_01_ensino_2_materiais_2lineards_2src_2lineards_8h-example.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -96,11 +96,29 @@ $(function(){initNavTree('globals_type.html',''); initResizable(true); });
 </div>
 </div>
 
+<div class="header">
+  <div class="headertitle"><div class="title">G:/Meu Drive/1. Ensino/Materiais/lineards/src/lineards.h</div></div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented typedefs with links to the documentation:</div><ul>
-<li>LDS_ITERATOR&#160;:&#160;<a class="el" href="lineards_8h.html#aa0fed03fb717eb4098f75e9eda3b718b">lineards.h</a></li>
-<li>LINEAR_DS&#160;:&#160;<a class="el" href="lineards_8h.html#af8e42f5836125d5e87b920abf2107dda">lineards.h</a></li>
-</ul>
+<p>Creates a static pointer to a temporary variable holding a given value.</p>
+<p>Creates a static pointer to a temporary variable holding a given value.This macro allows you to pass constant values directly to functions that accept a generic pointer (<code>void *</code>), without the need to create a temporary variable explicitly. The macro creates a static variable to hold the value, and returns a pointer to that variable. This avoids dynamic memory allocation and does not require manual memory deallocation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>The value to be stored in a temporary static variable. The type of this value will be inferred automatically. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer of type <code>void *</code> to the temporary static variable holding the provided value.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The temporary variable is static, meaning it retains its value between function calls. However, this also means that the macro is not thread-safe. If the macro is called multiple times with the same value type, it will reuse the static variable, potentially causing unintended side effects.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Use with caution in multithreaded environments. Since the static variable is reused across multiple calls, concurrent threads may interfere with each other's data if they call this macro simultaneously.</dd></dl>
+<div class="fragment"><div class="line"> *</div>
+<div class="line">LINEAR_DS * l = lds_new_list(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">lds_insert(l, 0, MAKE_PTR(100));</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> x;</div>
+<div class="line">lds_get(l, 0, &amp;x);</div>
+<div class="line">printf(<span class="stringliteral">&quot;%s&quot;</span>, x); <span class="comment">// prints 100.</span></div>
+</div><!-- fragment --><div class="fragment"></div><!-- fragment --><p> Drive/1. <a class="el" href="lineards_8h.html" title="Header file defining functions and data types for linear data structures in C.">Ensino/Materiais/lineards/src/lineards.h</a> </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

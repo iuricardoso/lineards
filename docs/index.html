@@ -120,13 +120,12 @@ Usage</h1>
 <h1><a class="anchor" id="examples_sec"></a>
 Examples</h1>
 <ul>
-<li>Example 1: Creating and manipulating a vector: <div class="fragment"><div class="line"><a class="code hl_typedef" href="lineards_8h.html#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a>* vector = lds_new_vector(10, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<li>Example 1: Creating and manipulating a vector: <div class="fragment"><div class="line">LINEAR_DS* vector = lds_new_vector(10, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
 <div class="line">lds_insert_last(vector, &amp;some_value);</div>
 <div class="line"><span class="comment">// Further operations...</span></div>
 <div class="line">lds_free(vector);</div>
-<div class="ttc" id="alineards_8h_html_af8e42f5836125d5e87b920abf2107dda"><div class="ttname"><a href="lineards_8h.html#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a></div><div class="ttdeci">struct LinearDS LINEAR_DS</div><div class="ttdoc">Definition of the opaque data structure for linear data structures.</div><div class="ttdef"><b>Definition</b> <a href="lineards_8h_source.html#l00312">lineards.h:312</a></div></div>
 </div><!-- fragment --></li>
-<li>Example 2: Using a linked list as a stack: <div class="fragment"><div class="line"><a class="code hl_typedef" href="lineards_8h.html#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a>* stack = lds_new_list(<span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
+<li>Example 2: Using a linked list as a stack: <div class="fragment"><div class="line">LINEAR_DS* stack = lds_new_list(<span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
 <div class="line">lds_stack_push(stack, &amp;some_double_value);</div>
 <div class="line"><span class="comment">// Further operations...</span></div>
 <div class="line">lds_free(stack);</div>

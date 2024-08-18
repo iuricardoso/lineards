@@ -98,7 +98,6 @@ $(function(){initNavTree('lineards_8h.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">lineards.h File Reference</div></div>
@@ -110,17 +109,6 @@ $(function(){initNavTree('lineards_8h.html',''); initResizable(true); });
 
 <p><a href="lineards_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:af8e42f5836125d5e87b920abf2107dda" id="r_af8e42f5836125d5e87b920abf2107dda"><td class="memItemLeft" align="right" valign="top"><a id="af8e42f5836125d5e87b920abf2107dda" name="af8e42f5836125d5e87b920abf2107dda"></a>
-typedef struct LinearDS&#160;</td><td class="memItemRight" valign="bottom"><b>LINEAR_DS</b></td></tr>
-<tr class="memdesc:af8e42f5836125d5e87b920abf2107dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the opaque data structure for linear data structures. <br /></td></tr>
-<tr class="separator:af8e42f5836125d5e87b920abf2107dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0fed03fb717eb4098f75e9eda3b718b" id="r_aa0fed03fb717eb4098f75e9eda3b718b"><td class="memItemLeft" align="right" valign="top"><a id="aa0fed03fb717eb4098f75e9eda3b718b" name="aa0fed03fb717eb4098f75e9eda3b718b"></a>
-typedef struct LDSIterator&#160;</td><td class="memItemRight" valign="bottom"><b>LDS_ITERATOR</b></td></tr>
-<tr class="memdesc:aa0fed03fb717eb4098f75e9eda3b718b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the opaque iterator. <br /></td></tr>
-<tr class="separator:aa0fed03fb717eb4098f75e9eda3b718b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a8f1ff60758e493fdb72f0a4946c6cc5a" id="r_a8f1ff60758e493fdb72f0a4946c6cc5a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> { <a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5aafd3b9336b8ded6ab0079b122dcb1a1ed">LDS_FAIL</a> =0
@@ -139,96 +127,99 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae29854a3eaec520e1e7471e81464a407" id="r_ae29854a3eaec520e1e7471e81464a407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae29854a3eaec520e1e7471e81464a407">lds_new_vector</a> (size_t initial_capacity, size_t data_size)</td></tr>
+<tr class="memitem:ae29854a3eaec520e1e7471e81464a407" id="r_ae29854a3eaec520e1e7471e81464a407"><td class="memItemLeft" align="right" valign="top">LINEAR_DS *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae29854a3eaec520e1e7471e81464a407">lds_new_vector</a> (size_t initial_capacity, size_t data_size)</td></tr>
 <tr class="memdesc:ae29854a3eaec520e1e7471e81464a407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new linear data structure using an array (vector).  <br /></td></tr>
 <tr class="separator:ae29854a3eaec520e1e7471e81464a407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae16173f31240c822d9ea9c58efc53752" id="r_ae16173f31240c822d9ea9c58efc53752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae16173f31240c822d9ea9c58efc53752">lds_new_list</a> (size_t data_size)</td></tr>
+<tr class="memitem:ae16173f31240c822d9ea9c58efc53752" id="r_ae16173f31240c822d9ea9c58efc53752"><td class="memItemLeft" align="right" valign="top">LINEAR_DS *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae16173f31240c822d9ea9c58efc53752">lds_new_list</a> (size_t data_size)</td></tr>
 <tr class="memdesc:ae16173f31240c822d9ea9c58efc53752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new linear data structure using a linked list.  <br /></td></tr>
 <tr class="separator:ae16173f31240c822d9ea9c58efc53752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac39187f7ee0e56290043dee8ec268473" id="r_ac39187f7ee0e56290043dee8ec268473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac39187f7ee0e56290043dee8ec268473">lds_free</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds)</td></tr>
+<tr class="memitem:ac39187f7ee0e56290043dee8ec268473" id="r_ac39187f7ee0e56290043dee8ec268473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac39187f7ee0e56290043dee8ec268473">lds_free</a> (LINEAR_DS *ds)</td></tr>
 <tr class="memdesc:ac39187f7ee0e56290043dee8ec268473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the memory allocated for a linear data structure.  <br /></td></tr>
 <tr class="separator:ac39187f7ee0e56290043dee8ec268473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d9b67093dfd465dc8ca9df7c0a8bf7" id="r_a38d9b67093dfd465dc8ca9df7c0a8bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38d9b67093dfd465dc8ca9df7c0a8bf7">lds_insert</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, size_t position, void *value)</td></tr>
+<tr class="memitem:a38d9b67093dfd465dc8ca9df7c0a8bf7" id="r_a38d9b67093dfd465dc8ca9df7c0a8bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38d9b67093dfd465dc8ca9df7c0a8bf7">lds_insert</a> (LINEAR_DS *ds, size_t position, void *value)</td></tr>
 <tr class="memdesc:a38d9b67093dfd465dc8ca9df7c0a8bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a value into the linear data structure at the specified position.  <br /></td></tr>
 <tr class="separator:a38d9b67093dfd465dc8ca9df7c0a8bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c4f3e99c2f758dc2e1e5b6494af004" id="r_a84c4f3e99c2f758dc2e1e5b6494af004"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84c4f3e99c2f758dc2e1e5b6494af004">lds_insert_last</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *value)</td></tr>
+<tr class="memitem:a84c4f3e99c2f758dc2e1e5b6494af004" id="r_a84c4f3e99c2f758dc2e1e5b6494af004"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84c4f3e99c2f758dc2e1e5b6494af004">lds_insert_last</a> (LINEAR_DS *ds, void *value)</td></tr>
 <tr class="memdesc:a84c4f3e99c2f758dc2e1e5b6494af004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a value at the end of the linear data structure.  <br /></td></tr>
 <tr class="separator:a84c4f3e99c2f758dc2e1e5b6494af004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a197e3b667420118fb8c2d4923889145e" id="r_a197e3b667420118fb8c2d4923889145e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197e3b667420118fb8c2d4923889145e">lds_get</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, size_t position, void *element)</td></tr>
+<tr class="memitem:a197e3b667420118fb8c2d4923889145e" id="r_a197e3b667420118fb8c2d4923889145e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197e3b667420118fb8c2d4923889145e">lds_get</a> (LINEAR_DS *ds, size_t position, void *element)</td></tr>
 <tr class="memdesc:a197e3b667420118fb8c2d4923889145e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the value at the specified position in the linear data structure.  <br /></td></tr>
 <tr class="separator:a197e3b667420118fb8c2d4923889145e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6cb30953f649a3ebc4699ecec100e87" id="r_ab6cb30953f649a3ebc4699ecec100e87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6cb30953f649a3ebc4699ecec100e87">lds_get_last</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *element)</td></tr>
+<tr class="memitem:ab6cb30953f649a3ebc4699ecec100e87" id="r_ab6cb30953f649a3ebc4699ecec100e87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6cb30953f649a3ebc4699ecec100e87">lds_get_last</a> (LINEAR_DS *ds, void *element)</td></tr>
 <tr class="memdesc:ab6cb30953f649a3ebc4699ecec100e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the last value from the linear data structure.  <br /></td></tr>
 <tr class="separator:ab6cb30953f649a3ebc4699ecec100e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed359a5087457de974b7a35af21467a" id="r_abed359a5087457de974b7a35af21467a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abed359a5087457de974b7a35af21467a">lds_set</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, size_t position, void *value)</td></tr>
+<tr class="memitem:abed359a5087457de974b7a35af21467a" id="r_abed359a5087457de974b7a35af21467a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abed359a5087457de974b7a35af21467a">lds_set</a> (LINEAR_DS *ds, size_t position, void *value)</td></tr>
 <tr class="memdesc:abed359a5087457de974b7a35af21467a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value at the specified position in the linear data structure.  <br /></td></tr>
 <tr class="separator:abed359a5087457de974b7a35af21467a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f866e99ae21e0c951ae254dd15b359" id="r_a15f866e99ae21e0c951ae254dd15b359"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15f866e99ae21e0c951ae254dd15b359">lds_remove</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, size_t position, void *removed_element)</td></tr>
+<tr class="memitem:a15f866e99ae21e0c951ae254dd15b359" id="r_a15f866e99ae21e0c951ae254dd15b359"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15f866e99ae21e0c951ae254dd15b359">lds_remove</a> (LINEAR_DS *ds, size_t position, void *removed_element)</td></tr>
 <tr class="memdesc:a15f866e99ae21e0c951ae254dd15b359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the value at the specified position from the linear data structure.  <br /></td></tr>
 <tr class="separator:a15f866e99ae21e0c951ae254dd15b359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa9ab8f93a67fcd6bc3b58c46d75ddff" id="r_afa9ab8f93a67fcd6bc3b58c46d75ddff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa9ab8f93a67fcd6bc3b58c46d75ddff">lds_remove_last</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *removed_element)</td></tr>
+<tr class="memitem:afa9ab8f93a67fcd6bc3b58c46d75ddff" id="r_afa9ab8f93a67fcd6bc3b58c46d75ddff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa9ab8f93a67fcd6bc3b58c46d75ddff">lds_remove_last</a> (LINEAR_DS *ds, void *removed_element)</td></tr>
 <tr class="memdesc:afa9ab8f93a67fcd6bc3b58c46d75ddff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last value from the linear data structure.  <br /></td></tr>
 <tr class="separator:afa9ab8f93a67fcd6bc3b58c46d75ddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f34c5988cc1718291373444794a94b" id="r_a32f34c5988cc1718291373444794a94b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f34c5988cc1718291373444794a94b">lds_size</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds)</td></tr>
+<tr class="memitem:a32f34c5988cc1718291373444794a94b" id="r_a32f34c5988cc1718291373444794a94b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f34c5988cc1718291373444794a94b">lds_size</a> (LINEAR_DS *ds)</td></tr>
 <tr class="memdesc:a32f34c5988cc1718291373444794a94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of elements in the linear data structure.  <br /></td></tr>
 <tr class="separator:a32f34c5988cc1718291373444794a94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dfccb0e590ffb49014dc6e47f9cf932" id="r_a7dfccb0e590ffb49014dc6e47f9cf932"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dfccb0e590ffb49014dc6e47f9cf932">lds_capacity</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds)</td></tr>
+<tr class="memitem:ae5521d0113bf91a0a2fa27bee846ae1b" id="r_ae5521d0113bf91a0a2fa27bee846ae1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5521d0113bf91a0a2fa27bee846ae1b">lds_empty</a> (LINEAR_DS *ds)</td></tr>
+<tr class="memdesc:ae5521d0113bf91a0a2fa27bee846ae1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a logical value (1-true, 0-false) indicating whether the structure is empty or not.  <br /></td></tr>
+<tr class="separator:ae5521d0113bf91a0a2fa27bee846ae1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfccb0e590ffb49014dc6e47f9cf932" id="r_a7dfccb0e590ffb49014dc6e47f9cf932"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dfccb0e590ffb49014dc6e47f9cf932">lds_capacity</a> (LINEAR_DS *ds)</td></tr>
 <tr class="memdesc:a7dfccb0e590ffb49014dc6e47f9cf932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current capacity of the linear data structure.  <br /></td></tr>
 <tr class="separator:a7dfccb0e590ffb49014dc6e47f9cf932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac021207dd63f594b1ce2229857f12a4d" id="r_ac021207dd63f594b1ce2229857f12a4d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac021207dd63f594b1ce2229857f12a4d">lds_data_size</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds)</td></tr>
+<tr class="memitem:ac021207dd63f594b1ce2229857f12a4d" id="r_ac021207dd63f594b1ce2229857f12a4d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac021207dd63f594b1ce2229857f12a4d">lds_data_size</a> (LINEAR_DS *ds)</td></tr>
 <tr class="memdesc:ac021207dd63f594b1ce2229857f12a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of each element stored in the linear data structure.  <br /></td></tr>
 <tr class="separator:ac021207dd63f594b1ce2229857f12a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b7d436b495f0ff204e94cb2d9202961" id="r_a0b7d436b495f0ff204e94cb2d9202961"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8eec8eb45c5c45248f08801ea8dfb674">lds_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b7d436b495f0ff204e94cb2d9202961">lds_type</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds)</td></tr>
+<tr class="memitem:a0b7d436b495f0ff204e94cb2d9202961" id="r_a0b7d436b495f0ff204e94cb2d9202961"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8eec8eb45c5c45248f08801ea8dfb674">lds_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b7d436b495f0ff204e94cb2d9202961">lds_type</a> (LINEAR_DS *ds)</td></tr>
 <tr class="memdesc:a0b7d436b495f0ff204e94cb2d9202961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the linear data structure.  <br /></td></tr>
 <tr class="separator:a0b7d436b495f0ff204e94cb2d9202961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa51c11b738351635770b0f47006f33d7" id="r_aa51c11b738351635770b0f47006f33d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa51c11b738351635770b0f47006f33d7">lds_iterator</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds)</td></tr>
+<tr class="memitem:aa51c11b738351635770b0f47006f33d7" id="r_aa51c11b738351635770b0f47006f33d7"><td class="memItemLeft" align="right" valign="top">LDS_ITERATOR *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa51c11b738351635770b0f47006f33d7">lds_iterator</a> (LINEAR_DS *ds)</td></tr>
 <tr class="memdesc:aa51c11b738351635770b0f47006f33d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator for traversing the elements of the linear data structure.  <br /></td></tr>
 <tr class="separator:aa51c11b738351635770b0f47006f33d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db0fe58923f003a005e945dcc6609f8" id="r_a5db0fe58923f003a005e945dcc6609f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5db0fe58923f003a005e945dcc6609f8">lds_it_position</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it)</td></tr>
+<tr class="memitem:a5db0fe58923f003a005e945dcc6609f8" id="r_a5db0fe58923f003a005e945dcc6609f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5db0fe58923f003a005e945dcc6609f8">lds_it_position</a> (LDS_ITERATOR *it)</td></tr>
 <tr class="memdesc:a5db0fe58923f003a005e945dcc6609f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current position of the iterator.  <br /></td></tr>
 <tr class="separator:a5db0fe58923f003a005e945dcc6609f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03cab4c77b3ff00c185ace21508f4791" id="r_a03cab4c77b3ff00c185ace21508f4791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03cab4c77b3ff00c185ace21508f4791">lds_it_add</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it, void *value)</td></tr>
+<tr class="memitem:a03cab4c77b3ff00c185ace21508f4791" id="r_a03cab4c77b3ff00c185ace21508f4791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03cab4c77b3ff00c185ace21508f4791">lds_it_add</a> (LDS_ITERATOR *it, void *value)</td></tr>
 <tr class="memdesc:a03cab4c77b3ff00c185ace21508f4791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new element at the current position of the iterator.  <br /></td></tr>
 <tr class="separator:a03cab4c77b3ff00c185ace21508f4791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcc524f71a0bc2ee1e4bbdae80e78258" id="r_afcc524f71a0bc2ee1e4bbdae80e78258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcc524f71a0bc2ee1e4bbdae80e78258">lds_it_next</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it)</td></tr>
+<tr class="memitem:afcc524f71a0bc2ee1e4bbdae80e78258" id="r_afcc524f71a0bc2ee1e4bbdae80e78258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcc524f71a0bc2ee1e4bbdae80e78258">lds_it_next</a> (LDS_ITERATOR *it)</td></tr>
 <tr class="memdesc:afcc524f71a0bc2ee1e4bbdae80e78258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the iterator to the next position in the linear data structure.  <br /></td></tr>
 <tr class="separator:afcc524f71a0bc2ee1e4bbdae80e78258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6d41913052a52e45ed1d2f56a2d5937" id="r_af6d41913052a52e45ed1d2f56a2d5937"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6d41913052a52e45ed1d2f56a2d5937">lds_it_has_next</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it)</td></tr>
+<tr class="memitem:af6d41913052a52e45ed1d2f56a2d5937" id="r_af6d41913052a52e45ed1d2f56a2d5937"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6d41913052a52e45ed1d2f56a2d5937">lds_it_has_next</a> (LDS_ITERATOR *it)</td></tr>
 <tr class="memdesc:af6d41913052a52e45ed1d2f56a2d5937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if there is a next element in the linear data structure.  <br /></td></tr>
 <tr class="separator:af6d41913052a52e45ed1d2f56a2d5937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a657bd45a93c88ee3d51aa45edde5135e" id="r_a657bd45a93c88ee3d51aa45edde5135e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a657bd45a93c88ee3d51aa45edde5135e">lds_it_get</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it, void *element)</td></tr>
+<tr class="memitem:a657bd45a93c88ee3d51aa45edde5135e" id="r_a657bd45a93c88ee3d51aa45edde5135e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a657bd45a93c88ee3d51aa45edde5135e">lds_it_get</a> (LDS_ITERATOR *it, void *element)</td></tr>
 <tr class="memdesc:a657bd45a93c88ee3d51aa45edde5135e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the element at the current position of the iterator.  <br /></td></tr>
 <tr class="separator:a657bd45a93c88ee3d51aa45edde5135e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1902b18e402262dc82281fc146c8c3af" id="r_a1902b18e402262dc82281fc146c8c3af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1902b18e402262dc82281fc146c8c3af">lds_it_set</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it, void *value)</td></tr>
+<tr class="memitem:a1902b18e402262dc82281fc146c8c3af" id="r_a1902b18e402262dc82281fc146c8c3af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1902b18e402262dc82281fc146c8c3af">lds_it_set</a> (LDS_ITERATOR *it, void *value)</td></tr>
 <tr class="memdesc:a1902b18e402262dc82281fc146c8c3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the element at the current position of the iterator.  <br /></td></tr>
 <tr class="separator:a1902b18e402262dc82281fc146c8c3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb02a0a90b0c33c42ebbb3214f2f43cc" id="r_aeb02a0a90b0c33c42ebbb3214f2f43cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb02a0a90b0c33c42ebbb3214f2f43cc">lds_it_remove</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it, void *removed_element)</td></tr>
+<tr class="memitem:aeb02a0a90b0c33c42ebbb3214f2f43cc" id="r_aeb02a0a90b0c33c42ebbb3214f2f43cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb02a0a90b0c33c42ebbb3214f2f43cc">lds_it_remove</a> (LDS_ITERATOR *it, void *removed_element)</td></tr>
 <tr class="memdesc:aeb02a0a90b0c33c42ebbb3214f2f43cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at the current position of the iterator.  <br /></td></tr>
 <tr class="separator:aeb02a0a90b0c33c42ebbb3214f2f43cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae761ad23b7796a991df2cc0b5cae17e9" id="r_ae761ad23b7796a991df2cc0b5cae17e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae761ad23b7796a991df2cc0b5cae17e9">lds_it_reset</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it)</td></tr>
+<tr class="memitem:ae761ad23b7796a991df2cc0b5cae17e9" id="r_ae761ad23b7796a991df2cc0b5cae17e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae761ad23b7796a991df2cc0b5cae17e9">lds_it_reset</a> (LDS_ITERATOR *it)</td></tr>
 <tr class="memdesc:ae761ad23b7796a991df2cc0b5cae17e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the iterator to the beginning of the linear data structure.  <br /></td></tr>
 <tr class="separator:ae761ad23b7796a991df2cc0b5cae17e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d305e5592599cc838853f6acfb7277a" id="r_a9d305e5592599cc838853f6acfb7277a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d305e5592599cc838853f6acfb7277a">lds_it_go</a> (<a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *it, size_t pos)</td></tr>
+<tr class="memitem:a9d305e5592599cc838853f6acfb7277a" id="r_a9d305e5592599cc838853f6acfb7277a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d305e5592599cc838853f6acfb7277a">lds_it_go</a> (LDS_ITERATOR *it, size_t pos)</td></tr>
 <tr class="memdesc:a9d305e5592599cc838853f6acfb7277a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the iterator to a specific position in the linear data structure.  <br /></td></tr>
 <tr class="separator:a9d305e5592599cc838853f6acfb7277a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ddd763af1a790cedd714e6452d253e1" id="r_a5ddd763af1a790cedd714e6452d253e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ddd763af1a790cedd714e6452d253e1">lds_stack_push</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *value)</td></tr>
+<tr class="memitem:a5ddd763af1a790cedd714e6452d253e1" id="r_a5ddd763af1a790cedd714e6452d253e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ddd763af1a790cedd714e6452d253e1">lds_stack_push</a> (LINEAR_DS *ds, void *value)</td></tr>
 <tr class="memdesc:a5ddd763af1a790cedd714e6452d253e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a value onto the stack.  <br /></td></tr>
 <tr class="separator:a5ddd763af1a790cedd714e6452d253e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3601c43ec856a456230d8e934b64f264" id="r_a3601c43ec856a456230d8e934b64f264"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3601c43ec856a456230d8e934b64f264">lds_stack_pop</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *removed_element)</td></tr>
+<tr class="memitem:a3601c43ec856a456230d8e934b64f264" id="r_a3601c43ec856a456230d8e934b64f264"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3601c43ec856a456230d8e934b64f264">lds_stack_pop</a> (LINEAR_DS *ds, void *removed_element)</td></tr>
 <tr class="memdesc:a3601c43ec856a456230d8e934b64f264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops the top value from the stack.  <br /></td></tr>
 <tr class="separator:a3601c43ec856a456230d8e934b64f264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f5de621130213329e8d88fbf57b1b26" id="r_a8f5de621130213329e8d88fbf57b1b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f5de621130213329e8d88fbf57b1b26">lds_stack_top</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *top)</td></tr>
-<tr class="memdesc:a8f5de621130213329e8d88fbf57b1b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the top value from the stack without removing it.  <br /></td></tr>
-<tr class="separator:a8f5de621130213329e8d88fbf57b1b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae58011d660e402025f3c8797d106cb" id="r_a3ae58011d660e402025f3c8797d106cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae58011d660e402025f3c8797d106cb">lds_enqueue</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *value)</td></tr>
+<tr class="memitem:ae5aba35ffe32cdc1154a184949509d30" id="r_ae5aba35ffe32cdc1154a184949509d30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5aba35ffe32cdc1154a184949509d30">lds_stack_peek</a> (LINEAR_DS *ds, void *top)</td></tr>
+<tr class="memdesc:ae5aba35ffe32cdc1154a184949509d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the top value from the stack without removing it.  <br /></td></tr>
+<tr class="separator:ae5aba35ffe32cdc1154a184949509d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae58011d660e402025f3c8797d106cb" id="r_a3ae58011d660e402025f3c8797d106cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae58011d660e402025f3c8797d106cb">lds_enqueue</a> (LINEAR_DS *ds, void *value)</td></tr>
 <tr class="memdesc:a3ae58011d660e402025f3c8797d106cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueues a value into the queue.  <br /></td></tr>
 <tr class="separator:a3ae58011d660e402025f3c8797d106cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb1b8c3a22e0268569deb559b97dccc9" id="r_acb1b8c3a22e0268569deb559b97dccc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb1b8c3a22e0268569deb559b97dccc9">lds_dequeue</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *removed_element)</td></tr>
+<tr class="memitem:acb1b8c3a22e0268569deb559b97dccc9" id="r_acb1b8c3a22e0268569deb559b97dccc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb1b8c3a22e0268569deb559b97dccc9">lds_dequeue</a> (LINEAR_DS *ds, void *removed_element)</td></tr>
 <tr class="memdesc:acb1b8c3a22e0268569deb559b97dccc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dequeues the front value from the queue.  <br /></td></tr>
 <tr class="separator:acb1b8c3a22e0268569deb559b97dccc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a2cd361d0f2416a26f758daaeaf29d" id="r_a29a2cd361d0f2416a26f758daaeaf29d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a2cd361d0f2416a26f758daaeaf29d">lds_queue_peek</a> (<a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *ds, void *front)</td></tr>
-<tr class="memdesc:a29a2cd361d0f2416a26f758daaeaf29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the front value from the queue without removing it.  <br /></td></tr>
-<tr class="separator:a29a2cd361d0f2416a26f758daaeaf29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecae6d0cd3605e2addd481fd793504b8" id="r_aecae6d0cd3605e2addd481fd793504b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecae6d0cd3605e2addd481fd793504b8">lds_queue_front</a> (LINEAR_DS *ds, void *front)</td></tr>
+<tr class="memdesc:aecae6d0cd3605e2addd481fd793504b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the front value from the queue without removing it.  <br /></td></tr>
+<tr class="separator:aecae6d0cd3605e2addd481fd793504b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file defining functions and data types for linear data structures in C. </p>
@@ -266,7 +257,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8h_source.html#l00254">254</a> of file <a class="el" href="lineards_8h_source.html">lineards.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8h_source.html#l00322">322</a> of file <a class="el" href="lineards_8h_source.html">lineards.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +283,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8h_source.html#l00289">289</a> of file <a class="el" href="lineards_8h_source.html">lineards.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8h_source.html#l00357">357</a> of file <a class="el" href="lineards_8h_source.html">lineards.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +297,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t lds_capacity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -325,7 +316,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="#ae16173f31240c822d9ea9c58efc53752" title="Creates a new linear data structure using a linked list.">lds_new_list</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00470">470</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00474">474</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -338,7 +329,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t lds_data_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -359,7 +350,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="#a0b7d436b495f0ff204e94cb2d9202961" title="Returns the type of the linear data structure.">lds_type</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00474">474</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00478">478</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -368,14 +359,11 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_dequeue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -383,11 +371,6 @@ Functions</h2></td></tr>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>removed_element</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Dequeues the front value from the queue. </p>
@@ -401,7 +384,35 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00714">714</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00718">718</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+
+</div>
+</div>
+<a id="ae5521d0113bf91a0a2fa27bee846ae1b" name="ae5521d0113bf91a0a2fa27bee846ae1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5521d0113bf91a0a2fa27bee846ae1b">&#9670;&#160;</a></span>lds_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lds_empty </td>
+          <td>(</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a logical value (1-true, 0-false) indicating whether the structure is empty or not. </p>
+<p>Informs whether the LINEAR_DS structure passed as a parameter is empty or not. It is empty when the number of elements is equal to zero. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ds</td><td>Pointer to the linear data structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A int value as logical value (1-true, 0-false). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00470">470</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -410,14 +421,11 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_enqueue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -425,11 +433,6 @@ Functions</h2></td></tr>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Enqueues a value into the queue. </p>
@@ -443,7 +446,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00710">710</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00714">714</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -456,7 +459,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void lds_free </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -485,7 +488,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -526,7 +529,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_get_last </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -559,7 +562,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_insert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -600,7 +603,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_insert_last </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -635,7 +638,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -656,7 +659,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00491">491</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00495">495</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -669,7 +672,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -690,7 +693,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00515">515</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00519">519</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -703,7 +706,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_go </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -724,7 +727,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00554">554</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00558">558</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -737,7 +740,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_has_next </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -753,7 +756,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating whether there is a next element (LDS_SUCCESS) or not (LDS_FAIL). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00508">508</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00512">512</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -766,7 +769,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_next </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -782,7 +785,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00498">498</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00502">502</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -795,7 +798,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t lds_it_position </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -811,7 +814,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current position of the iterator. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00487">487</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00491">491</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -824,7 +827,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_remove </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -845,7 +848,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00536">536</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00540">540</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -858,7 +861,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_reset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -874,7 +877,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00546">546</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00550">550</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -887,7 +890,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_it_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
+          <td class="paramtype">LDS_ITERATOR *</td>          <td class="paramname"><span class="paramname"><em>it</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -908,7 +911,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00526">526</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00530">530</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -919,9 +922,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa0fed03fb717eb4098f75e9eda3b718b">LDS_ITERATOR</a> * lds_iterator </td>
+          <td class="memname">LDS_ITERATOR * lds_iterator </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -937,7 +940,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An iterator (LDS_ITERATOR*) for the linear data structure. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00483">483</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00487">487</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -948,7 +951,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> * lds_new_list </td>
+          <td class="memname">LINEAR_DS * lds_new_list </td>
           <td>(</td>
           <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>data_size</em></span></td><td>)</td>
           <td></td>
@@ -978,7 +981,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> * lds_new_vector </td>
+          <td class="memname">LINEAR_DS * lds_new_vector </td>
           <td>(</td>
           <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>initial_capacity</em></span>, </td>
         </tr>
@@ -1007,19 +1010,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a29a2cd361d0f2416a26f758daaeaf29d" name="a29a2cd361d0f2416a26f758daaeaf29d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a2cd361d0f2416a26f758daaeaf29d">&#9670;&#160;</a></span>lds_queue_peek()</h2>
+<a id="aecae6d0cd3605e2addd481fd793504b8" name="aecae6d0cd3605e2addd481fd793504b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecae6d0cd3605e2addd481fd793504b8">&#9670;&#160;</a></span>lds_queue_front()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_queue_peek </td>
+          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_queue_front </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1027,11 +1027,6 @@ Functions</h2></td></tr>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>front</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Retrieves the front value from the queue without removing it. </p>
@@ -1045,7 +1040,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00718">718</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00722">722</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1053,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_remove </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1099,7 +1094,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_remove_last </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1134,7 +1129,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1175,7 +1170,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">size_t lds_size </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1195,103 +1190,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3601c43ec856a456230d8e934b64f264" name="a3601c43ec856a456230d8e934b64f264"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3601c43ec856a456230d8e934b64f264">&#9670;&#160;</a></span>lds_stack_pop()</h2>
+<a id="ae5aba35ffe32cdc1154a184949509d30" name="ae5aba35ffe32cdc1154a184949509d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5aba35ffe32cdc1154a184949509d30">&#9670;&#160;</a></span>lds_stack_peek()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_stack_pop </td>
+          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_stack_peek </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>removed_element</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pops the top value from the stack. </p>
-<p>This function removes and retrieves the top value from the stack.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ds</td><td>Pointer to the linear data structure (stack). </td></tr>
-    <tr><td class="paramname">removed_element</td><td>Pointer to a memory location where the removed value will be stored. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00701">701</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
-
-</div>
-</div>
-<a id="a5ddd763af1a790cedd714e6452d253e1" name="a5ddd763af1a790cedd714e6452d253e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ddd763af1a790cedd714e6452d253e1">&#9670;&#160;</a></span>lds_stack_push()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_stack_push </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pushes a value onto the stack. </p>
-<p>This function pushes a value onto the stack.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ds</td><td>Pointer to the linear data structure (stack). </td></tr>
-    <tr><td class="paramname">value</td><td>Pointer to the value to be pushed onto the stack. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00697">697</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
-
-</div>
-</div>
-<a id="a8f5de621130213329e8d88fbf57b1b26" name="a8f5de621130213329e8d88fbf57b1b26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f5de621130213329e8d88fbf57b1b26">&#9670;&#160;</a></span>lds_stack_top()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_stack_top </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1299,11 +1207,6 @@ Functions</h2></td></tr>
           <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>top</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Retrieves the top value from the stack without removing it. </p>
@@ -1317,7 +1220,75 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00709">709</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+
+</div>
+</div>
+<a id="a3601c43ec856a456230d8e934b64f264" name="a3601c43ec856a456230d8e934b64f264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3601c43ec856a456230d8e934b64f264">&#9670;&#160;</a></span>lds_stack_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_stack_pop </td>
+          <td>(</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>removed_element</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pops the top value from the stack. </p>
+<p>This function removes and retrieves the top value from the stack.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ds</td><td>Pointer to the linear data structure (stack). </td></tr>
+    <tr><td class="paramname">removed_element</td><td>Pointer to a memory location where the removed value will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00705">705</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+
+</div>
+</div>
+<a id="a5ddd763af1a790cedd714e6452d253e1" name="a5ddd763af1a790cedd714e6452d253e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ddd763af1a790cedd714e6452d253e1">&#9670;&#160;</a></span>lds_stack_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a8f1ff60758e493fdb72f0a4946c6cc5a">lds_return_t</a> lds_stack_push </td>
+          <td>(</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pushes a value onto the stack. </p>
+<p>This function pushes a value onto the stack.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ds</td><td>Pointer to the linear data structure (stack). </td></tr>
+    <tr><td class="paramname">value</td><td>Pointer to the value to be pushed onto the stack. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>lds_return_t indicating the result of the operation (LDS_SUCCESS or an error code). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00701">701</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1301,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#a8eec8eb45c5c45248f08801ea8dfb674">lds_type_t</a> lds_type </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#af8e42f5836125d5e87b920abf2107dda">LINEAR_DS</a> *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
+          <td class="paramtype">LINEAR_DS *</td>          <td class="paramname"><span class="paramname"><em>ds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1351,7 +1322,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="el" href="#ae16173f31240c822d9ea9c58efc53752" title="Creates a new linear data structure using a linked list.">lds_new_list</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00478">478</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="lineards_8c_source.html#l00482">482</a> of file <a class="el" href="lineards_8c_source.html">lineards.c</a>.</p>
 
 </div>
 </div>
