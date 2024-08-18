@@ -685,7 +685,7 @@ static lds_return_t it_set_in_vector(LDS_ITERATOR *it, void *value) {
     return set_element_in_vector(it->ds, it->position, value);
 }
 static lds_return_t it_set_in_list(LDS_ITERATOR *it, void *value) {
-    if (memcpy(value, it->current->data, it->ds->data_size) == 0) {
+    if (memcmp(value, it->current->data, it->ds->data_size) == 0) {
         return LDS_FAIL;
     }
 

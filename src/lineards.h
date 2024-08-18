@@ -245,6 +245,43 @@ extern "C" {
 #include <stdio.h>
 
 /**
+ * @brief Creates a static pointer to a temporary variable holding a given value.
+ *
+ * This macro allows you to pass constant values directly to functions that accept a generic pointer (`void *`),
+ * without the need to create a temporary variable explicitly. The macro creates a static variable to hold the value,
+ * and returns a pointer to that variable. This avoids dynamic memory allocation and does not require manual memory deallocation.
+ *
+ * @param var The value to be stored in a temporary static variable. The type of this value will be inferred automatically.
+ * @return A pointer of type `void *` to the temporary static variable holding the provided value.
+ *
+ * @note The temporary variable is static, meaning it retains its value between function calls. However, this also means
+ * that the macro is not thread-safe. If the macro is called multiple times with the same value type, it will reuse the
+ * static variable, potentially causing unintended side effects.
+ *
+ * @warning Use with caution in multithreaded environments. Since the static variable is reused across multiple calls,
+ * concurrent threads may interfere with each other's data if they call this macro simultaneously.
+ *
+ * @example
+ * @code
+ * #include <stdio.h>
+ *
+ * #define MAKE_PTR(var)   ({ static __typeof__(var) _tmp = (var); (void *)&_tmp; })
+ *
+ * void example_function(void *ptr) {
+ *     int value = *(int *)ptr;
+ *     printf("Value: %d\n", value);
+ * }
+ *
+ * int main() {
+ *     example_function(MAKE_PTR(42));  // Passing a constant value of 42
+ *     return 0;
+ * }
+ * @endcode
+ */
+#define MAKE_PTR(var)   ({ static __typeof__(var) _tmp = (var); (void *)&_tmp; })
+
+
+/**
  * @enum lds_return_t
  * @brief Indicates the success or failure of an operation involving the LINEAR_DS structure.
  *
